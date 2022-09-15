@@ -1,0 +1,38 @@
+* {
+	font-family: 'Roboto Slab', serif;
+}
+
+body {
+	display: grid;
+	place-items: center;
+	font-size: 18px;
+}
+
+main {
+	width: min(95vw, 1000px);
+}
+
+section {
+	border-top: thin #f0f0f0 solid;
+}
+
+figure {
+	border: thin #f0f0f0 solid;
+	display: flex;
+	flex-flow: column;
+	padding: 6px;
+	margin: auto;
+	max-width: max(20vw, 20vh);
+}
+
+img {
+	width: 100%;
+}
+
+figcaption {
+	background-color: #222;
+	color: #fff;
+	font: italic smaller sans-serif;
+	padding: 3px;
+	text-align: center;
+}

@@ -1,0 +1,106 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Strona poświęcona podstawowym informacjom na temat dźwięku analogowego i cyfrowego.">
+		<title>Audio</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<h1>Dźwięk analogowy i cyfrowy</h1>
+		</header>
+		<main>
+			<article>
+				<h2>Podstawowe informacje o dźwięku</h2>
+				<section>
+					<h3>Analogowy zapis dźwięku</h3>
+					<p>
+						Gdy dźwięk występuje analogowo, to oznacza, że jest on w swojej naturalnej ciągłej formie.
+						Częstotliwości fal słyszalnych dla człowieka to 20Hz - 20kHz.
+					</p>
+				</section>
+				<section>
+					<h3>Cyfrowy zapis dźwięku</h3>
+					<p>
+						Aby dźwięk z postaci analogowej zapisać w postaci cyfrowej, należy poddać go trzem odpowiednim procesom:
+						<ul>
+							<li><strong>próbkowanie</strong>, polega na przekształceniu dźwięku ze źródła na plik cyfrowy. Podczas nagrywania dźwięku cyfrowego w określonych odstępach czasu są pobierane próbki fal dźwięku źródłowego.</li>
+							<li><strong>kwantyzacja</strong>, polega na przypisaniu każdej próbce zebranej podczas próbkowania jednego poziomu kwantyzacji.</li>
+							<li><strong>kodowanie</strong>, polega na zmianie poziomów kwantyzacji w kod binarny.</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h3>Wielkości kodujące dźwięk</h3>
+					<ul>
+						<li>składowa</li>
+						<li>częstotliwość próbkowania</li>
+						<li>wysokość dźwięku</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Wielkości charakteryzujące dźwięk</h2>
+					<ul>
+						<li>widmo dźwęku</li>
+						<li>barwa dźwięku</li>
+					</ul>
+
+					<figure>
+						<img src="img/widmo.webp" alt="Widmo dźwięku">
+						<figcaption>Widmo dźwięku</figcaption>
+					</figure>
+				</section>
+				<section>
+					<h2>Jakość</h2>
+					<p>Jakość dźwięku zależy od częstotliwości próbkowania i rozdzielczości bitowej.</p>
+					<p>Częstotliwość próbkowania * liczba bitów * liczba sekund * liczba kanałów.</p>
+				</section>
+				<section>
+					<h2>Kompresja audio</h2>
+					<ul>
+						<li>
+							MP3
+							<ul>
+								<li>15 kHz</li>
+								<li>Maskowanie tonów</li>
+							</ul>
+						</li>
+						<li>
+							FLAC
+							<ul>
+								<li>Kodek audio</li>
+								<li>Bezstratny</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Redukcja szumu</h2>
+					<p>
+						Efekt redukcji szumu pozwala na usunięcie z nagrania niepotrzebnych zakłóceń. W przeciwieństwie do większości efektów w programie Audacity, jego obsługa jest w pewnym sensie dwufazowa. Najpierw musimy zaznaczyć część nagrania które zawiera w sobie tylko szum -- wystarczy kilka sekund. Następnie z zakładki efekty wybieramy kolejno "redukcja szumu" i "uzyskaj profil szumu". Dzięki temu program wie, jak wygląda szum, który należy odfiltrować. Aby dokończyć proces filtrowania, zaznacz fragment ścieżki, z którego chcesz usunąć szum, a następnie znów z zakładki efekty wybierz "redukcja szumu", jednak tym razem kliknij w przycisk "ok". Warto zaznaczyć, że podczas drugiego kroku mamy do dyspozycji kilka parametrów, którymi możemy operować, aby uzyskać korzystniejszy dla nas efekt.
+						<ul>
+							<li>
+								<p><strong>Redukcja szumu</strong>, steruje stopniem redukcji głośności, który ma być zastosowany do zidentyfikowanego szumu. Użyj najniższej wartości, która redukuje hałas do akceptowalnego poziomu. Wyższe wartości niż to konieczne, mogą sprawić, że hałas będzie jeszcze cichszy, ale spowoduje uszkodzenie pozostałego dźwięku.</p>
+							</li>
+							<li>
+								<p><strong>Czułość</strong>, określa, jaka część dźwięku zostanie uznana za szum, w skali od 0 (wyłączone) do 24 (maksymalnie).</p>
+							</li>
+							<li>
+								<p><strong>Wygładzanie częstotliwości</strong>, modyfikuje fragment ścieżki rozkładając go na wiele pasm. W obecności artefaktów dźwiękowych, wygładzanie może sprawić, że te artefakty będą brzmieć bardziej akceptowalnie.</p>
+							</li>
+						</ul>
+					</p>
+					<figure>
+						<img src="img/szum.webp" alt="Okno redukcji szumu">
+						<figcaption>Okno redukcji szumu</figcaption>
+					</figure>
+				</section>
+			</article>
+		</main>
+	</body>
+</html>
